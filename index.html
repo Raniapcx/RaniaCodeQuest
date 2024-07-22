@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -35,25 +36,32 @@
     </nav>
 
     <main class="container mt-5">
-        <h1 class="text-center mb-3">RaniaCodeQuest</h1>
-        <p class="text-center mb-5 main-description">Embarking on a digital journey, crafting web experiences with passion and precision.</p>
-        <hr class="mb-5">
+        <h1 class="text-center mb-3" data-aos="fade-down" data-aos-duration="1000">Rania<wbr>Code<wbr>Quest</h1>
+        <p class="text-center mb-5 main-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Embarking on a digital journey, crafting web experiences with passion and precision.</p>
+        <hr class="mb-5" data-aos="fade" data-aos-duration="1500">
 
         <div class="row">
-            <div class="col-12 col-md-6 mb-4">
+            <div class="col-12 col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
                 <h2>About Me</h2>
                 <p>Hello, I'm Rania, a web developer based in France. With a keen eye for design and a passion for coding, I create responsive and user-friendly websites. My journey in web development is fueled by continuous learning and a desire to bring creative ideas to life in the digital realm.</p>
             </div>
-            <div class="col-12 col-md-6 mb-4">
+            <div class="col-12 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000">
                 <h2>Contact</h2>
                 <div class="social-icons">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Raniapcx" target="_blank" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                        <i class="fab fa-github"></i> <span>GitHub</span>
+                    </a>
+                    <a href="#" target="_blank" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                        <i class="fab fa-instagram"></i> <span>Instagram</span>
+                    </a>
+                    <a href="#" target="_blank" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                        <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+                    </a>
+                    <a href="#" target="_blank"data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100" >
+                        <i class="fab fa-twitter"></i> <span>Twitter</span>
+                    </a>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer class="mt-5 py-3">
@@ -63,5 +71,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
