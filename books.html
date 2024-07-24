@@ -3,32 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="A blog about JavaScript, React.js, and React Native.">
+    <meta name="keywords" content="JavaScript, React.js, React Native, Web Development, Programming">
+    <meta name="author" content="Your Name Here">
+    <title>My Programming Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: #77b300 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        article {
+            margin-top: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+            color: #666;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .post {
+            margin-bottom: 40px;
+        }
+        .post-title {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .post-date {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Programming Books</h1>
+        <div class="container">
+            <h1>Programming Blog</h1>
+        </div>
     </header>
-    <main>
-        <section class="books-grid">
-            <article class="book">
-                <img src="path/to/book1-cover.jpg" alt="Cover of Book One">
-                <h2>Title of Book One</h2>
-                <p>A brief description of book one. Here you can add a summary of the book's content and its benefits.</p>
-                <a href="path/to/book1.pdf" class="download-btn">Download PDF</a>
-            </article>
-            <article class="book">
-                <img src="path/to/book2-cover.jpg" alt="Cover of Book Two">
-                <h2>Title of Book Two</h2>
-                <p>A brief description of book two. Explain here what makes this book unique and what the reader will learn from it.</p>
-                <a href="path/to/book2.pdf" class="download-btn">Download PDF</a>
-            </article>
-            <!-- You can add more books with the same structure -->
-        </section>
-    </main>
+
+    <div class="container">
+        <article class="post">
+            <h2 class="post-title">Understanding JavaScript</h2>
+            <div class="post-date">Published on July 20, 2024</div>
+            <img src="https://via.placeholder.com/800x400?text=JavaScript" alt="JavaScript">
+            <p>JavaScript is one of the most widely used and influential programming languages in the world. Initially developed as a scripting language for browsers, it has evolved into a full-fledged programming language that can be used to create both client-side and server-side applications.</p>
+            <h3>Reasons Behind the Importance of JavaScript:</h3>
+            <ul>
+                <li><strong>Browser Compatibility</strong>: All modern browsers support JavaScript, making it the primary programming language for developing interactive user interfaces.</li>
+                <li><strong>Ease of Learning</strong>: JavaScript is known for its simplicity and readability, which makes it a great choice for beginners.</li>
+                <li><strong>Large and Supportive Community</strong>: There is a vast community of developers who use JavaScript, along with a wealth of educational resources, libraries, and tools available.</li>
+                <li><strong>Versatility</strong>: JavaScript can be used in a variety of scenarios, including front-end development, back-end development, mobile app development, and more.</li>
+            </ul>
+        </article>
+
+        <article class="post">
+            <h2 class="post-title">Introduction to React.js</h2>
+            <div class="post-date">Published on July 22, 2024</div>
+            <img src="https://via.placeholder.com/800x400?text=React.js" alt="React.js">
+            <p>React.js is a JavaScript library for building user interfaces, maintained by Facebook and a community of individual developers and companies. It is used for handling the view layer for web and mobile apps. React allows developers to create large web applications that can update and render efficiently in response to data changes.</p>
+            <h3>Why Use React.js?</h3>
+            <ul>
+                <li><strong>Component-Based</strong>: React allows you to build encapsulated components that manage their own state, then compose them to make complex UIs.</li>
+                <li><strong>Declarative</strong>: React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</li>
+                <li><strong>Learn Once, Write Anywhere</strong>: You can develop new features in React without rewriting existing code. React can also render on the server using Node and power mobile apps using React Native.</li>
+            </ul>
+        </article>
+
+        <article class="post">
+            <h2 class="post-title">Building Mobile Apps with React Native</h2>
+            <div class="post-date">Published on July 24, 2024</div>
+            <img src="https://via.placeholder.com/800x400?text=React+Native" alt="React Native">
+            <p>React Native is a framework for building native apps using React. It enables you to create mobile applications that are indistinguishable from apps built using native development tools. React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.</p>
+            <h3>Advantages of React Native</h3>
+            <ul>
+                <li><strong>Code Reusability</strong>: Use the same code for deployment on both iOS and Android platforms, which saves a significant amount of time and effort.</li>
+                <li><strong>Live and Hot Reloading</strong>: React Native offers live and hot reloading, which means you can see the results of the latest change you have made to the code instantaneously.</li>
+                <li><strong>Strong Community Support</strong>: React Native has a strong community of developers who contribute to its improvement and provide support to fellow developers.</li>
+                <li><strong>Rich Ecosystem</strong>: There is a rich ecosystem of libraries and tools available for React Native, which can greatly speed up development.</li>
+            </ul>
+        </article>
+    </div>
+
     <footer>
-        <p>All rights reserved © 2024</p>
+        <p>&copy; 2024 Your Name Here. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
